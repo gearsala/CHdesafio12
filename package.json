@@ -1,0 +1,26 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "main": "babel.config.js",
+  "scripts": {
+    "transpile": "babel src --out-dir dist",
+    "start": "node ./dist/index.js",
+    "build:start": "npm run transpile && npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/express-handlebars": "^5.3.1",
+    "express": "^4.17.1"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "express-handlebars": "^5.3.3",
+    "socket.io": "^4.1.3"
+  }
+}
